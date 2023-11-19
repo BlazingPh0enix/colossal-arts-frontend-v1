@@ -1,0 +1,65 @@
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.canvas-board {
+    position: absolute;
+    z-index: 1;
+}
+
+.canvas-board img {
+    width: 420px;
+    height: 250px;
+}
+
+.form {
+    position: relative;
+    z-index: 2;
+    
+}
+
+.form img {
+    height: 20px;
+    width: 20px;
+    margin: 0 20px 5px 0;
+}
+
+.userMail,
+.userName,
+.userPass,
+.forgotPass,
+.newUser {
+    margin-bottom: 10px;
+}
+
+input{
+    background: transparent;
+    outline: none;
+    border: none;
+    color: black;
+    font-size: 30px;
+}
+
+.forgotPass a, 
+.newUser a,
+.currentUser a {
+    text-decoration: none;
+    color: black;
+}
+
+.logInSignUp button{
+    background-color: #3498db;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.logInSignUp button:hover{
+    background-color: #2980b9;
+}
