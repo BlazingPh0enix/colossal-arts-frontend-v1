@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './SignIn.css';
+import '../../index.css';
 import email_icon from '../assets/email.png';
 import pass_icon from '../assets/padlock.png';
 import user_icon from '../assets/user.png';
@@ -19,15 +20,15 @@ export const SignIn = () =>{
             </div>
             <div class="form">
                 {isSignUp ? <div id='inputs' class="userName">
-                    <img src={user_icon}/>
+                    <img id='userIcon' src={user_icon}/>
                     <input type='text' placeholder='Name'/>
                 </div> : <div></div>}
                 <div id='inputs' class="userMail">
-                    <img src={email_icon}/>
+                    <img id='emailIcon' src={email_icon}/>
                     <input type='email' placeholder='Email'/>
                 </div>
                 <div id='inputs' class="userPass">
-                    <img src={pass_icon}/>
+                    <img id='passIcon' src={pass_icon}/>
                     <input type='password' placeholder='Password'/>
                 </div>
                 <div class="forgotPass">
